@@ -330,7 +330,7 @@ MoneyToggleBtn.MouseButton1Click:Connect(function()
     if moneyLooping then
         task.spawn(function()
             while moneyLooping do
-                GiveMoneyEvent:FireServer(2500, currentMethod)
+                GiveMoneyEvent:FireServer(5500, currentMethod)
                 task.wait(1)
             end
         end)
