@@ -151,7 +151,7 @@ MoneyNote.BackgroundTransparency = 1
 local MoneyNote2 = Instance.new("TextLabel", MoneyPage)
 MoneyNote2.Size = UDim2.new(1, 0, 0, 20)
 MoneyNote2.Position = UDim2.new(0, 0, 0, 30)
-MoneyNote2.Text = "(ALL METHODS GIVE ONLY 5500)"
+MoneyNote2.Text = "(ALL METHODS GIVE ONLY 2000)"
 MoneyNote2.TextColor3 = Color3.new(1, 1, 1)
 MoneyNote2.Font = Enum.Font.GothamBold
 MoneyNote2.TextSize = 13
@@ -330,7 +330,7 @@ MoneyToggleBtn.MouseButton1Click:Connect(function()
     if moneyLooping then
         task.spawn(function()
             while moneyLooping do
-                GiveMoneyEvent:FireServer(5500, currentMethod)
+                GiveMoneyEvent:FireServer(2550, currentMethod)
                 task.wait(1)
             end
         end)
